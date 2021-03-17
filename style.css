@@ -13,19 +13,38 @@
         height: 100px;
         width: 100%;
       }
+
+
       .package {
-        display: grid;
-        grid-template-columns: 100px 100px;
-        grid-template-rows: 200px 200px;
-        grid-gap: 10px;
-      
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+       
+       
+        
+      }
+
+      .name{
+        border-color: black;
+        border-width: thick;
+        border-style: solid;
+
+      }
+
+      .buttonlinks {
+          display: grid;
+          grid-template-rows:repeat(3, 20px);
       }
   
       .main {
         padding: 0.5em;
         background-color: rgb(63, 153, 205);
         border: 2px solid rgb(46, 120, 163);
-    
 
       }
+
+
       
