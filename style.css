@@ -1,0 +1,31 @@
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: roboto, sans-serif;
+      }
+     
+      
+      header {
+        padding: 20px;
+        align-items: center;
+        background-color: coral;
+        height: 100px;
+        width: 100%;
+      }
+      .package {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 200px 200px;
+        grid-gap: 10px;
+      
+      }
+  
+      .main {
+        padding: 0.5em;
+        background-color: rgb(63, 153, 205);
+        border: 2px solid rgb(46, 120, 163);
+    
+
+      }
+      
