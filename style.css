@@ -1,10 +1,81 @@
-@media screen and (max-width: 200px) {
-    .scrollmenus {
-  
-      display: block;
-  
-      width: 100%;
-  
+/*
+* Navigation
+*
+*/
+/*
+* Mobile
+*/
+.navigation {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    width: 100%;
+    display: flex;
+}
+.navigation  li {
+    
+    flex: 1 1 auto;
+    border:1px solid black;
+    align-self: center;
+}
+.navigation .link-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.navigation .link-container a{
+    height: 50px;
+    line-height:50px;
+    background:rgb(255, 64, 30);
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    margin-left: 10%;
+}
+
+.navigation .link-container a.picture{
+    background: none;
+}
+
+.navigation .link-container a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+.logo{
+    height: 80px;
+    max-width: 210px;
+    
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*
+* Tablet vertical
+*/
+@media only screen and (min-device-width : 768px)  { 
+    .navigation .link-container a{
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
     }
-  
-  }
+}
+/*
+* Tablet Horizontal
+*/
+@media only screen and (min-device-width : 1024px) { 
+
+}
+/*
+* Desktops and laptops
+*/
+@media only screen and (min-width : 1224px){
+
+}
