@@ -16,17 +16,15 @@
       header {
         padding: 20px;
         align-items: center;
-        background-color: coral;
+        background-color:rgb(207, 104, 97);
       
       }
 
       .student  {
-  
         width: 100%;
 
       }
       .name {
-
         margin-bottom: 0;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -76,6 +74,80 @@
       .description p {
         margin: 0;
       
+      }
+
+     
+/* CHANGE SCREEN WITH TABLETS */
+
+      @media screen and (min-width: 768px){
+        body {
+          padding: 0;
+          margin: 0;
+          font-family: roboto, sans-serif;
+        }
+       
+        
+        header {
+          padding: 20px;
+          align-items: center;
+          background-color: coral;
+        
+        }
+  
+      .student  {
+        margin-top: 5px;
+        margin-bottom: 5px;
+         display: grid;
+         grid-template-areas: 
+                  "name logoslinks" 
+                  "description photo" ;
+        grid-template-columns: 1fr 6fr 6fr 1fr;
+  
+    
+        }
+
+      .student .name{
+        grid-area: name ;
+        grid-column-start: 2;
+        padding-top: 0;
+        align-self: center;
+
+      
+      }
+
+      .student .photo {
+        grid-area: photo;
+        grid-column-start: 3;
+        height: 90%;
+        padding-top: 5%;
+    
+      }
+
+      .student .logoslinks {
+        grid-area: logoslinks;
+        justify-content:space-evenly;
+        grid-column-start: 3;
+            
+      }
+
+      .student .description {
+        grid-area: description;
+        grid-column-start: 2;
+        padding-top: 5%;
+    
+      }
+
+      .student .description .title-description {
+        align-self: center;
+      }
+      
+      .student .description > p {
+        /*padding-bottom: 35%;
+      
+      }
+
+    
+     
       }
 
       /* CHANGE SCREEN WITH LAPTOP */
@@ -144,26 +216,9 @@
       
       }
       
-
       }
-     
-/* CHANGE SCREEN WITH TABLETS */
 
-      @media screen and (min-width: 768px){
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: roboto, sans-serif;
-        }
-       
-        
-        header {
-          padding: 20px;
-          align-items: center;
-          background-color: coral;
-        
-        }
-  
+      /*essai 1 pour la partie tablets
         .student  {
           background-color: blueviolet;
           margin-top:10%;
@@ -186,12 +241,28 @@
         grid-row-start: row1-start;
         grid-row-end: 3;
       }
+      
+
+      essai 2 
+         .student  {
+        background-color: blueviolet;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+        }
+        
+      .photo {
+        background-color: chocolate;
+        width:  auto;
+        height: 20vh;
+        background-size: cover;     
+      }
 
       .logoslinks { background-color: crimson;
         display: flex;
-        justify-content: flex-start;
-        padding-left: 20px;
         padding-top: 2%;
+        padding-left: 0;
       }
 
       .logotailles {
@@ -201,33 +272,27 @@
       }
 
 
-      .description{
-        background-color: darkorange;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-bottom: 15%;
-        text-align: justify;
-        padding-left: 8%;
-        padding-right: 10%;
+      */     
+      
+      /*.student  {
+         
+        margin-top:10%;
+        display:grid;     
+        grid-column-start: 2;
+        grid-column-end: five;
+        grid-row-start: row1-start;
+        grid-row-end: 3;
   
-      }
-        
-      .description h2 {
-        background-color: darkorchid;
-        text-align: center;
-        font-size:x-large;
-        color:gray;
-        margin-top:2%;
-        margin-bottom: 0; 
-
-      }
-
-      .description p {
-        background-color: darkred;
-        margin: 0;
-      
+     
       }
       
 
-      }
+    .photo {
+      background-color: chocolate;
+      width: auto;
+      height:20vh;
+      grid-column-start: 2;
+      grid-column-end: five;
+      grid-row-start: row1-start;
+      grid-row-end: 3;
+    }  
