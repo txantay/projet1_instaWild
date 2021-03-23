@@ -1,0 +1,62 @@
+body{
+    background-color: white
+}
+
+
+header{
+ background-color: white
+ border-bottom: 1 px solid #ccc;
+ a{ 
+     box-sizing: border-box;
+     width: 25%;
+     display: inline-block;
+     margin-left: -3px
+     text-align: center;
+     padding: 12px;
+     background: red;
+
+     &:hover{
+      
+        .home{
+            color: red;
+
+        }
+
+     }
+
+     .home{
+        color: 111;
+        font-size: 25px;
+        }
+
+     }
+
+
+
+    
+
+
+
+
+
+
+
+  }
+}
+
+.container{
+background: #FAFAFA;
+padding-top: 50px;
+position: absolute;
+width: 100%;
+top: 50px
+bottom: 0;
+
+.card{
+background: #fff;
+margin: 0 auto;
+width: 500px;
+height: 500px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
